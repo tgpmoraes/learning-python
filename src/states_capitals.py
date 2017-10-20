@@ -35,12 +35,14 @@ import os, sys
 import random
 
 states = list(capitals_dict.keys())
-for i in [1,2,3,4,5]:
+while True:
     state = random.choice(states)
     capital = capitals_dict[state]
     capital_guess = raw_input("Qual é a capital do(a) " + state + "? ")
     
-    if capital_guess == capital:
+    if capital_guess.lower() == "quit":
+	break
+    elif capital_guess == capital:
         print("Correto! Bom trabalho.")
     else:
         print("Incorreto. A capital do(a) " + state + " é " + capital + ".")
