@@ -1,0 +1,3 @@
+Tiago,10
+Mariane,10
+Artur,10
